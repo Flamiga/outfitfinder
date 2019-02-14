@@ -3,8 +3,10 @@
 }
 
 body {font-family: "Barlow Condensed";
+font-size: 1.2em;
 margin: 0%;
-text-align: center;}
+text-align: center;
+}
 
 
 header {overflow: hidden;
@@ -18,10 +20,13 @@ font-weight: 200;
 font-size: 3.5em;
 margin: 0%;}
 
+h2 {margin: 3%;}
+
 a {text-decoration: none;
 color: white;}
 
-.upload {font-size: 1.6em;
-  font-weight: 100;}
+.upload {font-size: 1.4em;
+  font-weight: 100;
+padding: 2%;}
 
 .upimg {width: 15%;}
