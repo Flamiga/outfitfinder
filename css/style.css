@@ -2,17 +2,11 @@
   --purple: rgb(117, 38, 177);
 }
 
+/* ---------- General styling ---------- */
 body {font-family: "Barlow Condensed";
 font-size: 1.2em;
 margin: 0%;
 text-align: center;
-}
-
-
-header {overflow: hidden;
-  text-align: center;
-  background-color: var(--purple);
-  color: white;
 }
 
 h1 {font-family: "Aliens & cows";
@@ -23,10 +17,41 @@ margin: 0%;}
 h2 {margin: 3%;}
 
 a {text-decoration: none;
-color: white;}
+color: grey;}
 
-.upload {font-size: 1.4em;
+
+/* ---------- topbar styling ---------- */
+
+.topbar {overflow: hidden;
+  text-align: center;
+  background-color: var(--purple);
+  color: white;
+}
+
+/* ---------- page styling ---------- */
+.page {
+  display: none;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  background: var(--light-grey);
+  animation: fadeIn 0.4s;
+}
+
+/* ---------- Upload page styling ---------- */
+.sektioner {font-size: 1.4em;
   font-weight: 100;
 padding: 2%;}
 
 .upimg {width: 15%;}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}

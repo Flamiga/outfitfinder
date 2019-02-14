@@ -3,28 +3,66 @@
 
 <head>
   <meta charset="utf-8">
-  <title>OUTFIT FINDER - UPLOAD</title>
+  <title>OUTFIT FINDER</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Upload din overdel eller underdel">
   <meta name="keywords" content="upload, overdel, underdel">
   <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
 
-  <body>
-    <!-- header -->
-    <header>
-      <h1><a href="swipe.html">UPLOAD</a></h1>
+<body>
+
+<!-- pages -->
+  <!-- Upload page -->
+  <section id="upload" class="page">
+    <header class="topbar">
+      <h1>UPLOAD</h1>
+    </header>
+    <section class="sektioner">
+      <h2>Upload overdel</h2>
+      <a href="#popover" onclick="showPage('popover')">
+        <img class="upimg" src="img/upload.svg" alt="Upload knap"></a>
+    </section>
+    <section class="sektioner">
+      <h2>Upload underdel</h2>
+      <a href="#popover" onclick="showPage('popover')">
+        <img class="upimg" src="img/upload.svg" alt="Upload knap"></a>
+    </section>
+    <p>Fortsæt uden upload &#10230;</p>
+  </section>
+
+  <!-- Pop over page -->
+  <section id="popover" class="page">
+    <header class="topbar">
+      <h1>dette er siden man uploader</h1>
+    </header>
+    <p>Vanessas indhold her</p>
+    <a href="#outfitfinder" onclick="showPage('outfitfinder')">
+      <p>Tryk her for at komme til swipe siden</p>
+    </a>
+  </section>
+
+  <!-- Swipe page -->
+  <section id="outfitfinder" class="page">
+    <header class="topbar">
+      <h1>OUTFIT FINDER</h1>
     </header>
 
-<!-- sections with upload buttons -->
-<section class="upload"><h2>Upload overdel</h2><img class="upimg" src="img/upload.svg" alt="Upload knap"></section>
-<section class="upload"><h2>Upload underdel</h2><img class="upimg" src="img/upload.svg" alt="Upload knap"></section>
-<section><p>Fortsæt uden upload &#10230;</p></section>
+    <section class="sektioner">
+      <h2>Overdel</h2>
+      <img id="swipetop" src="img/top.png" alt="Overdel billede">
+    </section>
+    <section class="sektioner">
+      <h2>Underdel</h2>
+      <img id="swipebottom" src="img/underdel.png" alt="Underdel billede">
+    </section>
+  </section>
 
-    <!-- main js file -->
-    <script src="js/main.js"></script>
 
-  </body>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+
+</body>
 
 </html>
