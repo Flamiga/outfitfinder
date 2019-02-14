@@ -21,11 +21,18 @@
             </button>
           </div>
           <div class="modal-body">
-            <div  class="takePhoto">
-    <form id="take" action="" method="POST">
-        <input type="file" id= "cap" name="personalPhoto" accept="image/*" capture ="camera" id="camera"><p>
-    </form>
-</div>
+            <p>
+Choose a picture from your device or capture one with your camera now:
+</p>
+
+  <input type="file" accept="image/*" onchange="picChange(event)"/>
+  <p>
+Photo:
+</p>
+<canvas id="capturedPhoto" width="500" height="400">
+</canvas>
+
+
 
             <!--<div class="grid-container">
   <div class="grid-item"> <img src="" alt=""></div>
@@ -48,7 +55,7 @@
     </div>
 
     <!-- main js file -->
-    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 
 </html>
