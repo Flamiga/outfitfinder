@@ -3,32 +3,41 @@
 }
 
 /* ---------- General styling ---------- */
-body {font-family: "Barlow Condensed";
-font-size: 1.2em;
-margin: 0%;
-text-align: center;
+
+body {
+  font-family: "Barlow Condensed";
+  font-size: 1.2em;
+  margin: 0%;
+  text-align: center;
 }
 
-h1 {font-family: "Aliens & cows";
-font-weight: 200;
-font-size: 3.5em;
-margin: 0%;}
+h1 {
+  font-family: "Aliens & cows";
+  font-weight: 200;
+  font-size: 3.5em;
+  margin: 0%;
+}
 
-h2 {margin: 3%;}
+h2 {
+  margin: 3%;
+}
 
-a {text-decoration: none;
-color: grey;}
-
+a {
+  text-decoration: none;
+  color: grey;
+}
 
 /* ---------- topbar styling ---------- */
 
-.topbar {overflow: hidden;
+.topbar {
+  overflow: hidden;
   text-align: center;
   background-color: var(--purple);
   color: white;
 }
 
 /* ---------- page styling ---------- */
+
 .page {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
@@ -38,20 +47,34 @@ color: grey;}
 }
 
 /* ---------- Upload page styling ---------- */
-.sektioner {font-size: 1.4em;
-  font-weight: 100;
-padding: 2%;}
 
-.upimg {width: 15%;}
+.sektioner {
+  font-size: 1.4em;
+  font-weight: 100;
+  padding: 2%;
+}
+
+.upimg {
+  width: 15%;
+}
 
 /* ---------- animations ---------- */
+
 /* fade in */
+
 @keyframes fadeIn {
   from {
     opacity: 0
   }
-
   to {
     opacity: 1
   }
+}
+
+/*bootstrap*/
+
+#carouselExampleControls {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
