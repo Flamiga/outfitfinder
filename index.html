@@ -23,12 +23,12 @@
     </header>
     <section class="sektioner">
       <h2>Upload overdel</h2>
-      <a href="#popover" onclick="showPage('popover')">
+      <a href="#popover" onclick="uploadOverdel()">
         <img class="upimg" src="img/upload.svg" alt="Upload knap"></a>
     </section>
     <section class="sektioner">
       <h2>Upload underdel</h2>
-      <a href="#popover" onclick="showPage('popover')">
+      <a href="#popover" onclick="uploadUnderdel()">
         <img class="upimg" src="img/upload.svg" alt="Upload knap"></a>
     </section>
     <p>Fortsæt uden upload &#10230;</p>
@@ -65,6 +65,8 @@
       <h1>OUTFIT FINDER</h1>
     </header>
     <!--overdel-->
+    <a href="#upload" onclick="showPage('upload')">
+    <button id="tilbage" type="button" name="tilbage">Tilbage</button></a>
     <section class="sektioner">
       <h2>Overdel</h2>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

@@ -1,4 +1,18 @@
 "use strict";
+ let del = "";
+ function uploadOverdel(){
+   del= "overdel";
+   showPage("popover");
+
+ }
+
+ function uploadUnderdel(){
+   del= "underdel";
+   showPage("popover");
+
+ }
+
+
 
 // hide all pages
 function hideAllPages() {
