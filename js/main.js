@@ -6,7 +6,10 @@ function continueF() {
 console.log(del);
 let imageURL = document.querySelector("#blah").src;
 showPage("outfitfinder");
-document.querySelector("#nr1").src = imageURL;
+if (del=="overdel"){
+document.querySelector("#nr1").src = imageURL;}
+else {
+document.querySelector("#nr2").src = imageURL;}
 }
 
  let del = "";
@@ -14,8 +17,7 @@ document.querySelector("#nr1").src = imageURL;
  function uploadOverdel(){
    del= "overdel";
    showPage("popover");
-
- }
+}
 
  function uploadUnderdel(){
    del= "underdel";
