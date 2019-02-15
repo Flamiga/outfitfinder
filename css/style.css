@@ -5,7 +5,7 @@
 /* ---------- General styling ---------- */
 
 body {
-  font-family: "Barlow Condensed";
+  font-family: "Barlow Condensed", arial;
   font-size: 1.2em;
   margin: 0%;
   text-align: center;
@@ -77,4 +77,62 @@ a {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* popover*/
+
+.modal {display: block;
+
+}
+
+div {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 5%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+canvas {
+  padding: 5%;
+  background-color: #3a2f3a4a;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 3%;
+}
+
+.upload {
+  font-size: 1.4em;
+  font-weight: 100;
+  padding: 2%;
+}
+
+.upimg {
+  width: 15%;
+}
+
+:root {
+  --purple: rgb(117, 38, 177);
+}
+
+input{width: 100%;
+}
+
+
+button {
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+}
+
+#tilbage{margin-right: 90%;
+  float: left;
+}
+.clearfix{
+  overflow: auto;
 }
