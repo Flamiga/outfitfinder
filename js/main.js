@@ -1,5 +1,9 @@
 "use strict";
-let
+let knap = "";
+function continue () {
+  if 
+}
+
  let del = "";
  function uploadOverdel(){
    del= "overdel";
