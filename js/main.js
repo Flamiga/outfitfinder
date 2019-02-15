@@ -1,5 +1,4 @@
 "use strict";
-<<<<<<< HEAD
 /* function continue () {
   if
 }
@@ -11,7 +10,6 @@ function continue ("upload") {
   knap = "underdel";
 
 }*/
->>>>>>> master
 
  let del = "";
 
@@ -27,10 +25,6 @@ function continue ("upload") {
  }
 
 
-<<<<<<< HEAD
-*/
-=======
->>>>>>> master
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");
