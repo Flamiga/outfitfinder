@@ -1,15 +1,13 @@
 "use strict";
-/* function continue () {
-  if
+
+
+let knap = "";
+function continueF() {
+console.log(del);
+let imageURL = document.querySelector("#blah").src;
+showPage("outfitfinder");
+document.querySelector("#nr1").src = imageURL;
 }
-=======
-
-/*let knap = "";
-function continue ("upload") {
-  knap = "overdel";
-  knap = "underdel";
-
-}*/
 
  let del = "";
 
