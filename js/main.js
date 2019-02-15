@@ -1,10 +1,14 @@
 "use strict";
-let knap = "";
-function continue () {
-  if 
-}
+
+/*let knap = "";
+function continue ("upload") {
+  knap = "overdel";
+  knap = "underdel";
+
+}*/
 
  let del = "";
+
  function uploadOverdel(){
    del= "overdel";
    showPage("popover");
@@ -15,7 +19,6 @@ function continue () {
    del= "underdel";
    showPage("popover");
  }
-
 
 
 // hide all pages
