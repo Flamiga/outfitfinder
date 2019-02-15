@@ -30,10 +30,21 @@ setDefaultPage();
 
 // popover
 
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+function readURL(input) {
+       if (input.files && input.files[0]) {
+           var reader = new FileReader();
 
+           reader.onload = function (e) {
+               $('#blah')
+                   .attr('src', e.target.result)
+                   .width(150)
+                   .height(200);
+           };
+
+           reader.readAsDataURL(input.files[0]);
+       }
+   }
+/*
 function picChange(evt){
 //bring selected photo in
 }
@@ -58,4 +69,4 @@ img.onload = function(){
 //load photo into canvas
 img.src = picURL;
 //release object url
-windowURL.revokeObjectURL(picURL);
+windowURL.revokeObjectURL(picURL);*/
