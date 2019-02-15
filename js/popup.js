@@ -17,7 +17,7 @@ var ctx = canvas.getContext("2d");
 var img = new Image();
 img.onload = function(){
   //draw photo into canvas when ready
-  ctx.drawImage(img, 0, 0, 100, 100);
+  ctx.drawImage(img, 0, 0, 100, 100);  
 };
 //load photo into canvas
 img.src = picURL;
