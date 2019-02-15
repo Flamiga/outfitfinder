@@ -81,20 +81,6 @@ a {
 
 /* popover*/
 
-.upload {
-  font-size: 1.4em;
-  font-weight: 100;
-  padding: 2%;
-}
-
-.upimg {
-  width: 15%;
-}
-
-:root {
-  --purple: rgb(117, 38, 177);
-}
-
 input{width: 100%;
 }
 
