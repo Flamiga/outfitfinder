@@ -12,7 +12,6 @@ function hideAllPages() {
 function showPage(pageId) {
   hideAllPages();
   document.querySelector(`#${pageId}`).style.display = "block";
-  setActiveTab(pageId);
 }
 
 // set default page
@@ -24,7 +23,7 @@ function setDefaultPage() {
   showPage(page);
 }
 
-// sets active tabbar/ menu item
+/* sets active tabbar/ menu item
 function setActiveTab(pageId) {
   let pages = document.querySelectorAll(".tabbar a");
   for (let page of pages) {
@@ -35,6 +34,6 @@ function setActiveTab(pageId) {
     }
 
   }
-}
+} */
 
 setDefaultPage();
