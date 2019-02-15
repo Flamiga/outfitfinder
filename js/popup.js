@@ -5,20 +5,21 @@ function picChange(evt){
 var fileInput = evt.target.files;
 if(fileInput.length>0){
 //get the file
-}//window url
+}
+//window url
 var windowURL = window.URL || window.webkitURL;
 //picture url
 var picURL = windowURL.createObjectURL(fileInput[0]);
 //get canvas
-var photoCanvas = document.getElementById("capturedPhoto");
-var ctx = photoCanvas.getContext("2d");
+var canvas = document.getElementById("capturedPhoto");
+var ctx = canvas.getContext("2d");
 //create image
-var photo = new Image();
-photo.onload = function(){
+var img = new Image();
+img.onload = function(){
   //draw photo into canvas when ready
-  ctx.drawImage(photo, 0, 0, 500, 400);
+  ctx.drawImage(img, 0, 0, 100, 100);
 };
 //load photo into canvas
-photo.src = picURL;
+img.src = picURL;
 //release object url
 windowURL.revokeObjectURL(picURL);
