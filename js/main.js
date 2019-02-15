@@ -1,9 +1,20 @@
 "use strict";
+<<<<<<< HEAD
 /* function continue () {
   if
 }
+=======
+
+/*let knap = "";
+function continue ("upload") {
+  knap = "overdel";
+  knap = "underdel";
+
+}*/
+>>>>>>> master
 
  let del = "";
+
  function uploadOverdel(){
    del= "overdel";
    showPage("popover");
@@ -16,7 +27,10 @@
  }
 
 
+<<<<<<< HEAD
 */
+=======
+>>>>>>> master
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");
