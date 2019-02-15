@@ -86,12 +86,37 @@ input{width: 100%;
 
 
 button {
+  border: none;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  display: inline-block;
+    text-decoration: none;
+}
+
+#tilbage{margin-right: 90%;
+  float: left;
+}
+
+/* Input styling */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
   border-radius: 5px;
   background-color: grey;
   color: white;
   padding: 5px;
 }
 
-#tilbage{margin-right: 90%;
-  float: left;
+/* For desktop */
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
 }

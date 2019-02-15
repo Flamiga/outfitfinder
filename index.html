@@ -45,7 +45,8 @@
       <p>
         Vælg et billede fra din galleri eller tag et billede med dit kamera:
       </p>
-      <input type='file' onchange="readURL(this);" />
+      <input type='file' name="file" id="file" class="inputfile" onchange="readURL(this);" />
+      <label for="file">Choose a file</label>
 
       <p>
         Billedet:

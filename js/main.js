@@ -1,7 +1,6 @@
 "use strict";
-let knap = "";
-function continue () {
-  if 
+/* function continue () {
+  if
 }
 
  let del = "";
@@ -17,7 +16,7 @@ function continue () {
  }
 
 
-
+*/
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");
