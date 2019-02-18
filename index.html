@@ -37,13 +37,13 @@
   <!-- Pop over page -->
   <section id="popover" class="page">
     <header class="topbar">
-      <h1>Upload dit billede</h1>
+      <h1 id="popoverheader"></h1>
     </header>
     <div class="modal-body">
       <a href="#upload" onclick="showPage('upload')">
       <button id="tilbage" type="button" name="tilbage">Tilbage</button></a>
       <p>
-        Vælg et billede fra din galleri eller tag et billede med dit kamera:
+        Vælg et billede fra dit galleri eller tag et billede med dit kamera:
       </p>
       <input type='file' name="file" id="file" class="inputfile" onchange="readURL(this);" />
       <label for="file">Choose a file</label>
