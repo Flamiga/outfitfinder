@@ -7,6 +7,8 @@ console.log(del);
 let imageURL = document.querySelector("#blah").src;
 showPage("outfitfinder");
 document.querySelector("#nr1").src = imageURL;
+
+
 }
 
  let del = "";
