@@ -3,6 +3,7 @@
 // Get the rigth photo to swipe
 let knap = "";
 function continueF() {
+  reset();
 console.log(del);
 let imageURL = document.querySelector("#blah").src;
 showPage("outfitfinder");
@@ -13,6 +14,20 @@ document.querySelector("#nr1").src = imageURL;}
 else {
 document.querySelector("#nr2").src = imageURL;}
 }
+
+// reset
+function reset(){
+  document.getElementById('ovedelcaroul').innerHTML = `
+  <div class="carousel-item active">
+    <img id="nr1" src="img/top.png" class="d-block w-100" alt="...">
+  </div>`;
+  document.getElementById('underdelcaroul').innerHTML = `
+  <div class="carousel-item active">
+    <img id="nr2" src="img/top.png" class="d-block w-100" alt="...">
+  </div>`;
+
+}
+
 
 // Go to the right page after choosing which style to upload + change of header
  let del = "";
