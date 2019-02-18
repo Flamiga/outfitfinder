@@ -11,14 +11,14 @@ function continueF() {
 
 
   if (del == "overdel") {
-    document.querySelector("#ovedelcaroul").innerHTML = `
-        <div class="carousel-item">
+    document.querySelector("#overdelcaroul").innerHTML = `
+        <div class="carousel-item active">
           <img src="${imageURL}" class="d-block w-100" alt="...">
         </div>
       `;
   } else {
     document.querySelector("#underdelcaroul").innerHTML = `
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <img src="${imageURL}" class="d-block w-100" alt="...">
         </div>
       `;
@@ -28,7 +28,7 @@ function continueF() {
 
 // reset
 function reset() {
-  document.getElementById('ovedelcaroul').innerHTML = `
+  document.getElementById('overdelcaroul').innerHTML = `
   <div class="carousel-item active">
     <img id="nr1" src="img/top.png" class="d-block w-100" alt="...">
   </div>`;
@@ -109,7 +109,7 @@ fetch('json/data.json')
   })
   .then(json => {
     console.log(json);
-    appendImages(json.overdel, "#ovedelcaroul");
+    appendImages(json.overdel, "#overdelcaroul");
     appendImages(json.underdel, "#underdelcaroul");
   });
 
