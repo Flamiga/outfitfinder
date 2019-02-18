@@ -6,16 +6,12 @@ function continueF() {
 console.log(del);
 let imageURL = document.querySelector("#blah").src;
 showPage("outfitfinder");
-<<<<<<< HEAD
-document.querySelector("#nr1").src = imageURL;
 
 
-=======
 if (del=="overdel"){
 document.querySelector("#nr1").src = imageURL;}
 else {
 document.querySelector("#nr2").src = imageURL;}
->>>>>>> master
 }
 
 // Go to the right page after choosing which style to upload + change of header
