@@ -25,38 +25,6 @@ function continueF() {
   let imageURL = document.querySelector("#blah").src;
   appendSelectedImage(imageURL);
   showPage("outfitfinder");
-<<<<<<< HEAD
-
-
-  if (del == "overdel") {
-    document.querySelector("#overdelcaroul").innerHTML = `
-        <div class="carousel-item active">
-          <img src="${imageURL}" class="d-block w-100" alt="...">
-        </div>
-      `;
-  } else {
-    document.querySelector("#underdelcaroul").innerHTML = `
-        <div class="carousel-item active">
-          <img src="${imageURL}" class="d-block w-100" alt="...">
-        </div>
-      `;
-    }
-}
-
-
-// reset
-function reset() {
-  document.getElementById('overdelcaroul').innerHTML = `
-  <div class="carousel-item active">
-    <img id="nr1" src="img/top.png" class="d-block w-100" alt="...">
-  </div>`;
-  document.getElementById('underdelcaroul').innerHTML = `
-  <div class="carousel-item active">
-    <img id="nr2" src="img/top.png" class="d-block w-100" alt="...">
-  </div>`;
-
-=======
->>>>>>> master
 }
 
 function uploadOverdel() {
@@ -113,20 +81,6 @@ function readURL(input) {
   }
 }
 
-<<<<<<< HEAD
-function loadImages(){
-
-fetch('json/data.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(json => {
-    console.log(json);
-    appendImages(json.overdel, "#overdelcaroul");
-    appendImages(json.underdel, "#underdelcaroul");
-  });
-
-=======
 function appendSelectedImage(imageURL) {
   let html = `
   <div class="carousel-item active">
@@ -139,7 +93,6 @@ function appendSelectedImage(imageURL) {
   } else {
     document.querySelector("#underdelCarousel").innerHTML = html;
   }
->>>>>>> master
 }
 
 function appendOverdel() {
