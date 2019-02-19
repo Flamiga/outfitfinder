@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>OUTFIT FINDER</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Upload din overdel eller underdel">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,7 +12,6 @@
 </head>
 
 <body>
-
   <!-- pages -->
   <!-- Upload page -->
   <section id="upload" class="page">
@@ -40,13 +38,13 @@
     </header>
     <div class="modal-body">
       <a href="#upload" onclick="showPage('upload')">
-      <button id="tilbage" type="button" name="tilbage">Tilbage</button></a>
+        <button id="tilbage" type="button" name="tilbage">Tilbage</button>
+      </a>
       <p>
         Vælg et billede fra dit galleri eller tag et billede med dit kamera:
       </p>
       <input type='file' name="file" id="file" class="inputfile" onchange="readURL(this);" />
       <label for="file">Choose a file</label>
-
       <p>
         Billedet:
       </p>
@@ -66,9 +64,10 @@
     </header>
     <!--overdel-->
     <a href="#upload" onclick="showPage('upload')">
-    <button id="tilbage" type="button" name="tilbage">Tilbage</button></a>
+      <button id="tilbage" type="button" name="tilbage">Tilbage</button></a>
     <section class="sektioner">
       <h2>Overdel</h2>
+<<<<<<< HEAD
       <div  class="carousel slide" data-ride="carousel">
         <div id="overdelcaroul" class="carousel-inner">
           <div class="carousel-item">
@@ -83,27 +82,36 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+=======
+      <div id="overdelCarouselContainer" class="carousel slide" data-ride="carousel">
+        <div id="overdelCarousel" class="carousel-inner">
+        </div>
+        <a class="carousel-control-prev" href="#overdelCarouselContainer" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#overdelCarouselContainer" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+>>>>>>> master
       </div>
     </section>
 
     <!--underdel-->
     <section class="sektioner">
       <h2>Underdel</h2>
-      <div class="carousel slide" data-ride="carousel">
-        <div id="underdelcaroul" class="carousel-inner">
-          <div class="carousel-item active">
-            <img id="nr2" src="img/top.png" class="d-block w-100" alt="...">
-          </div>
+      <div id="underdelCarouselContainer" class="carousel slide" data-ride="carousel">
+        <div id="underdelCarousel" class="carousel-inner">
         </div>
-        <a class="carousel-control-prev" href="#underdelcaroul" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-        <a class="carousel-control-next" href="#underdelcaroul" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-
+        <a class="carousel-control-prev" href="#underdelCarouselContainer" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#underdelCarouselContainer" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
   </section>

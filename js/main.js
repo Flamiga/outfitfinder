@@ -2,12 +2,30 @@
 
 // Get the rigth photo to swipe
 let knap = "";
+let del = "";
+let overdele = [];
+let underdele = [];
+
+// hent all data og gem i listerne
+fetch('json/data.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(json => {
+    console.log(json);
+    overdele = json.overdel;
+    underdele = json.underdel;
+  });
 
 function continueF() {
-  loadImages();
-  console.log(del);
+  // reset - append again
+  appendOverdel();
+  appendUnderdel();
+
   let imageURL = document.querySelector("#blah").src;
+  appendSelectedImage(imageURL);
   showPage("outfitfinder");
+<<<<<<< HEAD
 
 
   if (del == "overdel") {
@@ -37,11 +55,9 @@ function reset() {
     <img id="nr2" src="img/top.png" class="d-block w-100" alt="...">
   </div>`;
 
+=======
+>>>>>>> master
 }
-
-
-// Go to the right page after choosing which style to upload + change of header
-let del = "";
 
 function uploadOverdel() {
   del = "overdel";
@@ -79,13 +95,9 @@ function setDefaultPage() {
   showPage(page);
 }
 
-
 setDefaultPage();
 
-
-
-// popover
-
+// Billedet browses og indlæses
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
@@ -93,7 +105,7 @@ function readURL(input) {
     reader.onload = function(e) {
       $('#blah')
         .attr('src', e.target.result)
-        .width(150)
+        .width(200)
         .height(200);
     };
 
@@ -101,6 +113,7 @@ function readURL(input) {
   }
 }
 
+<<<<<<< HEAD
 function loadImages(){
 
 fetch('json/data.json')
@@ -113,19 +126,65 @@ fetch('json/data.json')
     appendImages(json.underdel, "#underdelcaroul");
   });
 
+=======
+function appendSelectedImage(imageURL) {
+  let html = `
+  <div class="carousel-item active">
+    <img src="${imageURL}" class="d-block w-100">
+  </div>
+  `;
+  if (del === "overdel") {
+    console.log(html);
+    document.querySelector("#overdelCarousel").innerHTML = html;
+  } else {
+    document.querySelector("#underdelCarousel").innerHTML = html;
+  }
+>>>>>>> master
 }
 
-loadImages();
-
-// Adds persons to the DOM by giving parameter, persons
-function appendImages(del, element) {
-  for (let image of del) { // looping trough all persons
-    console.log(image);
-    //creating person data, HTML tags and adding to the DOM, the element #gridPersons
-    document.querySelector(element).innerHTML += `
-        <div class="carousel-item">
-          <img src="${image}" class="d-block w-100" alt="...">
+function appendOverdel() {
+  let html = "";
+  let isFirst = true;
+  for (let image of overdele) {
+    if (isFirst) {
+      // hvis det er først element skal carousel-item være active
+      html += `
+        <div class="carousel-item active">
+          <img src="${image}" class="d-block w-100">
         </div>
       `;
+      isFirst = false;
+    } else {
+      html += `
+        <div class="carousel-item">
+          <img src="${image}" class="d-block w-100>
+        </div>
+      `;
+    }
   }
+  document.querySelector("#overdelCarousel").innerHTML = html;
+}
+
+function appendUnderdel() {
+  let html = "";
+  let isFirst = true;
+  for (let image of underdele) {
+    if (isFirst) {
+      // hvis det er først element skal carousel-item være active
+      html += `
+        <div class="carousel-item active">
+          <img src="${image}" class="d-block w-100">
+        </div>
+      `;
+      isFirst = false;
+    } else {
+      html += `
+        <div class="carousel-item">
+          <img src="${image}" class="d-block w-100">
+        </div>
+      `;
+    }
+  }
+  document.querySelector("#underdelCarousel").innerHTML = html;
+
 }
