@@ -110,7 +110,7 @@ function appendOverdel() {
     } else {
       html += `
         <div class="carousel-item">
-          <img src="${image}" class="d-block w-100>
+          <img src="${image}" class="d-block w-100">
         </div>
       `;
     }
