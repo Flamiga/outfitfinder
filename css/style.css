@@ -118,14 +118,10 @@ button {
 }
 
 .tilbage {
-  margin-right: auto;
+  margin-right: 90%;
   float: left;
   background-color: var(--purple);
-}
-.continue {
-    margin-right: auto;
-    float: right;
-    background-color: var(--purple);
+
 }
 
 /* Input styling */
