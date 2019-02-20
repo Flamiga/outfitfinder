@@ -16,43 +16,48 @@
   <!-- Upload page -->
   <section id="upload" class="page">
     <header class="topbar">
-      <h1>UPLOAD</h1>
+      <h1>UPLOADS</h1>
     </header>
+    <br><br>
     <section class="sektioner">
-      <h2>Upload overdel</h2>
+      <h2>UPLOAD <br>OVERDEL</h2>
       <a href="#popover" onclick="uploadOverdel()">
-        <img class="upimg" src="img/upload.svg" alt="Upload knap"></a>
+        <img class="upimg" src="img/upimg.jpg" alt="Upload knap"></a>
     </section>
+    <br><br>
     <section class="sektioner">
-      <h2>Upload underdel</h2>
+      <h2>UPLOAD <br>UNDERDEL</h2>
       <a href="#popover" onclick="uploadUnderdel()">
-        <img class="upimg" src="img/upload.svg" alt="Upload knap"></a>
+        <img class="upimg" src="img/upimg.jpg" alt="Upload knap"></a>
     </section>
+    <br>
     <p>Fortsæt uden upload &#10230;</p>
   </section>
 
   <!-- Pop over page -->
   <section id="popover" class="page">
     <header class="topbar">
-      <h1 id="popoverheader"></h1>
+      <h1 class="popoverheader">UPLOADS</h1>
     </header>
-    <div class="modal-body">
-  <a href="#upload" onclick="showPage('upload')">
-        <button class="tilbage" type="button" name="tilbage">Tilbage</button>
-</a>
 
+<br>
+<div class="modal-body">
       <p>
         Vælg et billede fra dit galleri eller tag et billede med dit kamera:
       </p>
-      <input type='file' name="file" id="file" class="inputfile" onchange="readURL(this);" />
-      <label for="file">Choose a file</label>
+      <input type="file" class="inputfile" name="file" id="file" onchange="readURL(this);" />
+      <label for="file">Vælg et billede</label>
       <p>
         Billedet:
       </p>
       <img id="blah" src="#" alt="your image" width="100" height="100" />
     </div>
+
+  <a href="#upload" onclick="showPage('upload')">
+        <button class="tilbage" type="button" name="tilbage">Tilbage</button>
+</a>
     <a href="#outfitfinder" onclick="continueF()">
-      <button type="button" name="forsæt">Forsæt</button>
+      <button type="button" class="continue" name="fortsæt">Fortsæt</button>
     </a>
   </section>
 
@@ -62,10 +67,10 @@
   <section id="outfitfinder" class="page">
     <header class="topbar">
       <h1>OUTFIT FINDER</h1>
-    </header>
+    </header> <br>
     <!--overdel-->
     <a href="#upload" onclick="showPage('upload')">
-      <button class="tilbage" type="button" name="tilbage">Tilbage</button></a>
+<button class="tilbage" type="button" name="tilbage">Tilbage</button></a>
     <section class="sektioner">
       <h2>Overdel</h2>
       <div id="overdelCarouselContainer" class="carousel slide" data-ride="carousel">
@@ -81,6 +86,7 @@
         </a>
       </div>
     </section>
+
 
     <!--underdel-->
     <section class="sektioner">
