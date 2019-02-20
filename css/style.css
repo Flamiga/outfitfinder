@@ -13,11 +13,12 @@ body {
 
 h1 {
   font-family: "Aliens & cows";
-  font-weight: 450;
+  font-weight: 400;
   font-size: 2.5em;
   margin-top: 5%;
   margin-bottom: 10%;
   text-align: center;
+
 }
 
 h2 {
@@ -49,7 +50,7 @@ p {
 }
 .popoverheader {
   font-family: "Aliens & cows";
-  font-weight: 450;
+  font-weight: 400;
   font-size: 2.5em;
   margin-top: 5%;
   margin-bottom: 10%;
