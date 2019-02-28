@@ -30,13 +30,13 @@ function continueF() {
 function uploadOverdel() {
   del = "overdel";
   showPage("popover");
-  document.querySelector("#popoverheader").innerHTML = "Upload overdel";
+  document.querySelector(".popoverheader").innerHTML = "Upload overdel";
 }
 
 function uploadUnderdel() {
   del = "underdel";
   showPage("popover");
-  document.querySelector("#popoverheader").innerHTML = "Upload underdel";
+  document.querySelector(".popoverheader").innerHTML = "Upload underdel";
 }
 
 
